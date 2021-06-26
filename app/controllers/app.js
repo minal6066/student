@@ -53,5 +53,9 @@ exports.calculateAverage = async (req, res, next) => {
                  }
               }
            ]);
-    console.log(average)
+    // console.log(average)
+    res.send(200).json({
+        message : "Data fetched successfully",
+        data : average
+    })
 }
